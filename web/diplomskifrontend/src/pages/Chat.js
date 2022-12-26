@@ -144,7 +144,7 @@ const Chat = () => {
             <input type="file" ref={pictureInput} onChange={handlePictureChange} accept="image/*" className="hidden" />
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content items-center">
-                <label htmlFor="my-drawer-2" className="btn drawer-button lg:hidden mt-2">{userData.receivername}</label>
+                <label htmlFor="my-drawer-2" className="btn btn-outline ml-10 drawer-button lg:hidden mt-2">{userData.receivername}</label>
                 <div className="w-full h-3/4 p-24 overflow-y-auto">
                     {/* Chat Begin */}
 

@@ -147,60 +147,56 @@ export default function Profile() {
                         <h1 className="my-auto"><div className="font-bold text-4xl">{authService.getCurrentUser().username}</div><div className=" text-3xl">Rastko Miocinovic</div></h1>
                     </div>
                 </div>
-                {/* <div className="h-full w-2/3 col-span-2 mask mask-squircle">
-                    <div ref={mapContainer} className="map-container h-full" />
-                </div>
-                <div ref={geocoderContainer} className="col-span-2" /> */}
-                <div className="h-3/4 w-2/3 row-span-2 col-span-1 justify-items-center mb-20 pb-32">
+                <div className="h-96 lg:h-3/4 w-2/3 row-span-2 col-span-3 lg:col-span-1 justify-items-center mb-20 lg:pb-32">
                     <h1 className="text-xl font-bold">Aproximate Location:</h1>
                     <div className="h-full w-full justify-items-center mt-12">
                         <div ref={mapContainer} className="map-container h-full" />
                     </div>
                     <div ref={geocoderContainer} className="text-center w-1/3 ml-80" />
                 </div>
-                <div className="justify-items-start text-start w-full row-span-2">
-                    <h1 className="text-xl font-bold pb-10">Shipping Information:</h1>
-                    <div className="form-control w-full max-w-full pr-36">
+                <div className="justify-items-start text-start w-2/3 lg:w-full col-span-3 lg:col-span-1 row-span-2">
+                    <h1 className="text-xl font-bold pt-10 pb-5 lg:pt-0 lg:pb-10">Shipping Information:</h1>
+                    <div className="form-control w-full max-w-full lg:pr-36">
                         <label className="label">
                             <span className="label-text ">Address:</span>
                         </label>
                         <input className="textarea input-bordered" ref={addressRef} placeholder=""></input>
                     </div>
-                    <div className="form-control w-full max-w-full pr-36">
+                    <div className="form-control w-full max-w-full lg:pr-36">
                         <label className="label">
                             <span className="label-text ">City:</span>
                         </label>
                         <input className="textarea input-bordered" ref={cityRef} placeholder=""></input>
                     </div>
-                    <div className="form-control w-full max-w-full pr-36">
+                    <div className="form-control w-full max-w-full lg:pr-36">
                         <label className="label">
                             <span className="label-text ">Country:</span>
                         </label>
                         <input className="textarea input-bordered" ref={countryRef} placeholder=""></input>
                     </div>
-                    <div className="form-control w-full max-w-full pr-36">
+                    <div className="form-control w-full max-w-full lg:pr-36">
                         <label className="label">
                             <span className="label-text ">Phone:</span>
                         </label>
                         <input className="textarea input-bordered" ref={phoneRef} placeholder=""></input>
                     </div>
                 </div>
-                <div className="justify-items-start text-start w-full row-span-2">
-                    <h1 className="text-xl font-bold pb-10">Seller Description:</h1>
+                <div className="justify-items-start text-start w-2/3 lg:w-full col-span-3 lg:col-span-1 row-span-2">
+                    <h1 className="text-xl font-bold pt-10 pb-5 lg:pt-0 lg:pb-10">Seller Description:</h1>
                     <div className="form-control w-52">
                         <label className="cursor-pointer label">
                             <span className="label-text font-bold text-lg">I am a seller</span>
                             <input type="checkbox" className="toggle toggle-accent" onChange={onChangeSeller} value={isSeller} checked={isSeller} />
                         </label>
                     </div>
-                    <div className="form-control w-full max-w-full pr-40 h-2/3">
+                    <div className="form-control w-full max-w-full lg:pr-40 h-2/3">
                         <label className="cursor-pointer label">
                             <span>Bio:</span>
                         </label>
-                        <textarea ref={bioInput} className="textarea input-bordered h-2/4" placeholder="Bio" disabled></textarea>
+                        <textarea ref={bioInput} className="textarea input-bordered h-3/4 lg:h-2/4" placeholder="Bio" disabled></textarea>
                     </div>
                 </div>
-                <div className="col-span-3">
+                <div className="col-span-3 mt-16 lg:mt-0">
                     <label htmlFor="modal-save" className="btn btn-success">save changes</label>
                 </div>
                 <div />

@@ -11,9 +11,11 @@ export default function Register() {
     const confirmRef = useRef(null);
 
     function validate() {
-        if (emailRef.current.value == '' || usernameRef.current.value == '' || firstnameRef.current.value == '' || lastnameRef.current.value == '' || passwordRef.current.value == '' || confirmRef.current.value == '')
+        if (emailRef.current.value == '' || usernameRef.current.value == ''
+            || firstnameRef.current.value == '' || lastnameRef.current.value == ''
+            || passwordRef.current.value == '' || confirmRef.current.value == '')
             return false;
-        if (passwordRef.current.value != confirmRef.current.value)
+        if (passwordRef.current.value != confirmRef.current.value || passwordRef.current.value.length < 8)
             return false;
         return true;
     }
